@@ -1,0 +1,30 @@
+[
+    {
+      "id": "1",
+      "title": "UI/UX Design",
+      "subtitle": "Create Stunning User Interfaces",
+      "image": "ui.png",
+      "description": "Learn how to design user interfaces that are not only visually appealing but also user-friendly and functional. This course covers design principles, tools, and techniques to craft engaging and intuitive user experiences that drive user satisfaction and business success."
+    },
+    {
+      "id": "2",
+      "title": "Software Development",
+      "subtitle": "Build Scalable Applications",
+      "image": "sw.png",
+      "description": "Master the skills needed to develop robust and scalable software solutions across various platforms. This course will guide you through programming languages, development methodologies, and best practices to create high-quality software that meets modern standards and user needs."
+    },
+    {
+      "id": "3",
+      "title": "Tech Training",
+      "subtitle": "Enhance Your Technical Skills",
+      "image": "teach.png",
+      "description": "Get hands-on training in the latest technologies and tools to stay ahead in the tech industry. This course provides practical experience with emerging technologies, covering everything from basic concepts to advanced techniques, ensuring you are well-prepared for future challenges."
+    },
+    {
+      "id": "4",
+      "title": "Tech Writing",
+      "subtitle": "Communicate Technology Effectively",
+      "image": "write.png",
+      "description": "Learn how to write clear and concise technical documentation and content for various audiences. This course emphasizes techniques for creating user manuals, guides, and technical articles that effectively convey complex information and enhance user understanding."
+    }
+  ]  
