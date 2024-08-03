@@ -31,25 +31,43 @@ body {
   border: 1px solid rgba(28, 71, 199, 0.3);
 }
 
-.h11{
-  background: #25CC0F;
-background: linear-gradient(to bottom right, #25CC0F 0%, #9E3212 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.h11 {
+  /** TEXT GRADIENT */
+  color: #7a0de2;
+  background-image: -webkit-linear-gradient(
+    135deg,
+    #7a0de2 3%,
+    #ac1300 44%,
+    #4f8412 97%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .h12 {
-  background: #00FF00;
-background: linear-gradient(to left, #00FF00 0%, #00FFFF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  background: #ff0000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff0000,
+    #9932cc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff0000,
+    #9932cc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .h13 {
-  background: #00FF00;
-background: linear-gradient(to left, #00FF00 0%, #FF0000 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  background: #00ff00;
+  background: linear-gradient(to left, #00ff00 0%, #ff0000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .homeintro {
@@ -240,8 +258,6 @@ html {
   width: 100%;
 }
 
-
-
 /* Loading.css */
 .loading-overlay {
   position: fixed;
@@ -266,8 +282,12 @@ html {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .loading-overlay p {
