@@ -360,27 +360,39 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
+import {motion} from "framer-motion";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
-import i1 from "../Images/1.png";
-import i2 from "../Images/2.png";
+import i1 from "../Images/oscar-nord-MuJHwDHbXUk-unsplash.jpg";
+import i2 from "../Images/pexels-junior-teixeira-1064069-2047905.jpg";
+import i3 from "../Images/olena-bohovyk-dIMJWLx1YbE-unsplash.jpg";
 
-import items from "./Teams.json";
+import items from "./Achieve.json";
 
 function Courses() {
   const imageMap = {
-    "1.png": i1,
-    "2.png": i2,
+    "i1.jpg": i1,
+    "i2.jpg": i2,
+    "i3.jpg": i3
+  };
+
+  const variantsall = {
+    initial: { scale: 0.3, opacity: 0 },
+    animate: { scale: 1, opacity: 1 },
+    transition: { duration: 5, staggerChildren: 0.2 },
   };
 
   return (
-    <div
+    <motion.div
+    variants={variantsall}
+    initial="initial"
+    animate="animate"
+    transition={{duration:1}}
       id="b37456c4530be810dc040f50da72eda09addfb0a"
       className="card-container container-fluid justify-content-center align-items-center text-center d-flex flex-column mb-md-5"
       style={{ minHeight: "98vh", overflow: "hidden" }}
     >
-      <h1 className="text-center text-info">Team Members</h1>
+      <h1 className="text-center text-info"></h1>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -400,7 +412,12 @@ function Courses() {
       >
         {items.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="card-content">
+            <motion.div
+            variants={variantsall}
+            initial="initial"
+            animate="animate"
+            transition={{duration:1, delay:1}}
+            className="card-content">
               <img
                 src={imageMap[item.image]}
                 alt={item.name}
@@ -409,16 +426,8 @@ function Courses() {
               <div className="card-info">
                 <h5>{item.name}</h5>
                 <h6>{item.role}</h6>
-                <a
-                  href={item.link}
-                  className="linkedin-fab"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Linkedin
-                </a>
               </div>
-            </div>
+            </motion.div>
           </SwiperSlide>
         ))}
       </Swiper>
@@ -505,6 +514,8 @@ function Courses() {
         @media (max-width: 768px) {
           .card-container {
             padding: 10px;
+            width: 500px;
+            height:500px;
           }
           .swiper-container {
             width: 100%;
@@ -522,7 +533,7 @@ function Courses() {
           }
         }
       `}</style>
-    </div>
+    </motion.div>
   );
 }
 

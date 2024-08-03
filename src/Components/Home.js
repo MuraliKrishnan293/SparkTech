@@ -6,6 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 import Parallax from "./Parallax";
 import Team from "./Team";
 import Courses from "./Courses";
+import Members from "./Members";
 
 const Home = () => {
   const variantsall = {
@@ -39,8 +40,8 @@ const Home = () => {
   };
 
   const variant4 = {
-    initial: { rotate: 540, opacity: 0 },
-    animate: { rotate: 0, opacity: 1 },
+    initial: { x: -100, opacity: 0 },
+    animate: { x: 0, opacity: 1 },
     transition: { duration: 5, staggerChildren: 0.2 },
   };
 
@@ -113,7 +114,7 @@ const Home = () => {
                       500,
                     ]}
                     speed={50}
-                    style={{ fontSize: "2em", fontWeight: "bold" }}
+                    style={{ fontSize: "2em", fontWeight: "bold", color:"yellowgreen" }}
                     repeat={Infinity}
                   />
                 </div>
@@ -148,14 +149,14 @@ const Home = () => {
         variants={variant4}
         initial="initial"
         whileInView="animate"
-        transition={{duration:1, delay:1}}
+        transition={{duration:1}}
         className="text-center pt-5 py-5 text-info abt">About Us<hr /></motion.h1>
         <motion.p
         variants={variant5}
         initial="initial"
         whileInView="animate"
         transition={{duration:1}}
-        className="p-5 text-primary fs-5 m-5">
+        className="p-md-5 text-primary fs-md-5 m-md-5">
           At SparkTech, a dynamic startup in the IT solutions space, we are
           passionate about driving digital transformation with innovative
           technology. Our agile team has been
@@ -171,8 +172,9 @@ const Home = () => {
       <div className="Parallax">
         <Parallax />
       </div>
-      <Team />
-      <Courses />
+      <div className="d-flex justify-content-center align-items-center text-center"><Members /></div>
+      <div><Courses /></div>
+      
     </div>
   );
 };

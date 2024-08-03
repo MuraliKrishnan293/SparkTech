@@ -93,7 +93,6 @@ const Team = () => {
                   />
                   
                   <p><strong>Description: </strong> {selectedItem.description}</p>
-                  <a href={selectedItem.link} target="_blank" rel="noopener noreferrer">Linkedin</a>
                 </>
               ) : (
                 <p>Loading...</p>
