@@ -118,6 +118,13 @@ const Nav = () => {
               <NavLink style={{ textDecoration: "none", color: "white" }} to="/services" className="nav-link" onClick={() => handleClick('/services')}>
                 Services
               </NavLink>
+              </li>
+              <li className="nav-item">
+              <NavLink style={{ textDecoration: "none", color: "white" }} to="/team" className="nav-link"
+              onClick={() => handleClick('/team')}
+              >
+                Team Members
+              </NavLink>
             </li>
           </ul>
         </div>

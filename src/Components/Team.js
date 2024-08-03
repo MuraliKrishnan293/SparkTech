@@ -48,11 +48,11 @@ const Team = () => {
   // };
 
   return (
-    <div id="218887269ad5946d9dc53238651c90472884f234" className="teams d-flex align-items-center justify-content-md-center justify-content-center" style={{ position: "relative", borderRadius:"70px", minHeight: "100vh" }}>
+    <div id="218887269ad5946d9dc53238651c90472884f234" className="teams justify-content-md-center justify-content-center" style={{ position: "relative", borderRadius:"70px", minHeight: "100vh" }}>
       <div className="hello card">
       </div>
-        <h1 className="text-center pt-5 my-5 mx-md-5">Our Services</h1>
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 d-flex align-items-center justify-content-center g-4 p-5 p-md-5 m-md-5">
+        <h1 className="text-center pt-5 my-5 text-white mx-md-5">WE OFFER</h1>
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 d-md-flex justify-content-md-center flex-wrap g-4 p-5 p-md-5 m-md-5">
         {items.map((item) => (
           <motion.div className="col" key={item.id}>
             <motion.div
@@ -60,15 +60,15 @@ const Team = () => {
             initial="initial"
             whileInView="animate"
             transition={{duration:2}}
-              style={{ cursor: "pointer", height:"250px" }}
-              className="card d-flex align-items-center justify-content-center teamcard m-3 p-4"
+              // style={{ cursor: "pointer", height:"250px" }}
+              className="card teamcard m-3 p-4"
               onClick={() => handleCardClick(item)}
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
               
               <h5>{item.title}</h5>
-              <h2>{item.subtitle}</h2>
+              <h5>{item.subtitle}</h5>
               {/* <img src={item.image} /> */}
               <img src={imageMap[item.image]} alt={item.title} style={{ width: "100px", height: "auto" }} />
             </motion.div>

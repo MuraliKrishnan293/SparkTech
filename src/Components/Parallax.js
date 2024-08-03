@@ -17,7 +17,7 @@ const Parallax = () => {
     <div ref={ref} className='parallax container-fluid'>
         {/* <motion.h1 style={{ y:yBg }}>Services We Offer</motion.h1> */}
         <motion.div className='mountains'>
-        <motion.h1 className='display-1' style={{ y:yText }}>Team Members</motion.h1>
+        <motion.h1 className='display-1' style={{ y:yText }}>Services</motion.h1>
         </motion.div>
         <motion.div style={{ y:yBg }} className='planets'></motion.div>
         <motion.div style={{ x:yBg }} className='stars'></motion.div>

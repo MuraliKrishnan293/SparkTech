@@ -32,42 +32,16 @@ body {
 }
 
 .h11 {
-  /** TEXT GRADIENT */
-  color: #7a0de2;
-  background-image: -webkit-linear-gradient(
-    135deg,
-    #7a0de2 3%,
-    #ac1300 44%,
-    #4f8412 97%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
+  color: rgb(231, 117, 11);
 }
 
 .h12 {
-  background: #ff0000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ff0000,
-    #9932cc
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ff0000,
-    #9932cc
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: rgb(227, 160, 3);
+  
 }
 
 .h13 {
-  background: #00ff00;
-  background: linear-gradient(to left, #00ff00 0%, #ff0000 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgb(241, 137, 0);
 }
 
 .homeintro {
@@ -187,7 +161,7 @@ body {
   background-color: white;
   transform: scale(1);
   color: #000000;
-  transition: all 2s;
+  transition: all 0.6s;
 }
 
 .teamcard:hover {
@@ -201,9 +175,11 @@ html {
   scroll-behavior: smooth;
 }
 
-.teams {
+/* .teams {
   background-image: url("./Images/magicpattern-bevXKKL7E9g-unsplash.jpg");
-}
+} */
+
+
 
 .courses {
   width: 100%;
@@ -292,7 +268,7 @@ html {
 
 .loading-overlay p {
   margin-top: 10px;
-  color: white;
+  color: rgb(233, 230, 230);
   font-size: 18px;
 }
 
@@ -304,10 +280,38 @@ html {
     text-align: center;
     justify-content: center;
     max-height: fit-content;
+    height: 200px;
+    font-size: 15px;
   }
 
   .teams{
     flex-direction: column;
     overflow: hidden;
   }
+}
+
+@media only screen and (max-width: 800px) {
+  .teamcard{
+    height: 300px;
+    font-size: 15px;
+  }
+  
+}
+
+@media only screen and (min-width: 900px) {
+  .teamcard{
+    height: 250px;
+    font-size: 15px;
+  }
+  
+}
+
+.te {
+  transform: scale(1);
+  transition: all 1s;
+}
+
+.te:hover {
+  transform: scale(1.1);
+  /* transition: background-color; */
 }

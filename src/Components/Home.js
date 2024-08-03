@@ -172,8 +172,8 @@ const Home = () => {
       <div className="Parallax">
         <Parallax />
       </div>
-      <div className="d-flex justify-content-center align-items-center text-center"><Members /></div>
-      <div><Courses /></div>
+      <div className="d-flex justify-content-center align-items-center text-center"><Team /></div>
+      {/* <div><Courses /></div> */}
       
     </div>
   );
