@@ -48,9 +48,11 @@ const Team = () => {
   // };
 
   return (
-    <div id="218887269ad5946d9dc53238651c90472884f234" className="teams" style={{ position: "relative", borderRadius:"70px", minHeight: "100vh" }}>
-        <h1 className="text-center pt-md-5 my-md-5 mx-md-5">Our Services</h1>
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center g-4 p-5 m-5">
+    <div id="218887269ad5946d9dc53238651c90472884f234" className="teams d-flex align-items-center justify-content-md-center justify-content-center" style={{ position: "relative", borderRadius:"70px", minHeight: "100vh" }}>
+      <div className="hello card">
+      </div>
+        <h1 className="text-center pt-5 my-5 mx-md-5">Our Services</h1>
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 d-flex align-items-center justify-content-center g-4 p-5 p-md-5 m-md-5">
         {items.map((item) => (
           <motion.div className="col" key={item.id}>
             <motion.div
@@ -59,7 +61,7 @@ const Team = () => {
             whileInView="animate"
             transition={{duration:2}}
               style={{ cursor: "pointer", height:"250px" }}
-              className="card teamcard m-3 p-4"
+              className="card d-flex align-items-center justify-content-center teamcard m-3 p-4"
               onClick={() => handleCardClick(item)}
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"

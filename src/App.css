@@ -295,3 +295,19 @@ html {
   color: white;
   font-size: 18px;
 }
+
+@media only screen and (max-width: 600px) {
+  .teamcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    max-height: fit-content;
+  }
+
+  .teams{
+    flex-direction: column;
+    overflow: hidden;
+  }
+}
