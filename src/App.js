@@ -6,6 +6,7 @@ import Members from './Components/Members';
 import Nav from './Components/Nav';
 import Team from './Components/Team';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Desktop1 from './Components/NewServices';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Routes>
           {/* <Home /> */}
         <Route exact path="/" element={<Home />} />
-         <Route path="/services" element={<Team />} />
+         <Route path="/services" element={<Desktop1 />} />
          <Route path="/team" element={<Members />} />
           {/* <Route exact path="/" element={<Home />} />
           <Route path="/team" element={<Team />} />
