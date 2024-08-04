@@ -13,7 +13,7 @@ export default function Desktop1() {
   };
 
   return (
-    <div className="container d-flex flex-column justify-content-center align-items-center text-center p-md-5 m-md-5 bg-light py-5">
+    <div className="container d-flex flex-column justify-content-center align-items-center text-center bg-light py-5">
       <div className="row mb-5">
         <div className="col-md-8 mt-5 text-center mx-auto">
           <h1 className="mb-4">Our Services</h1>
