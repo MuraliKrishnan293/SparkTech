@@ -58,7 +58,7 @@ const Home = () => {
           <div className="row">
             <div
               style={{ minHeight: "98vh" }}
-              className="col-md-6 flex-column d-flex justify-content-center align-items-center text-center mt-5 my-5 pt-5 py-5 mt-sm-5 my-sm-5 pt-sm-5 py-sm-5"
+              className="col-md-12 flex-column d-flex justify-content-center align-items-center text-center mt-5 my-5 pt-5 py-5 mt-sm-5 my-sm-5 pt-sm-5 py-sm-5"
             >
               <div className="d-flex flex-row">
                 <motion.h1
@@ -127,7 +127,7 @@ const Home = () => {
             </motion.p> */}
               </div>
             </div>
-            <div className="homeimg col-md-6 d-flex justify-content-center text-center align-items-center">
+            {/* <div className="homeimg col-md-6 d-flex justify-content-center text-center align-items-center">
               <motion.img
                 variants={variantimg}
                 initial="initial"
@@ -140,7 +140,7 @@ const Home = () => {
               {/* adfsdf */}
 
               {/* dfdrgd */}
-            </div>
+            {/* </div>  */}
           </div>
         </motion.div>
       </div>
