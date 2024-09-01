@@ -110,21 +110,22 @@ const Nav = () => {
         <div className="collapse navbar-collapse" id="s">
           <ul className="navbar-nav gap-4 text-white ms-auto">
             <li className="nav-item">
-              <NavLink style={{ textDecoration: "none", color: "white" }} to="/" className="nav-link" onClick={() => handleClick('/')}>
+              <a style={{ textDecoration: "none", color: "white" }} href="/" className="nav-link">
                 Home
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
-              <NavLink style={{ textDecoration: "none", color: "white" }} to="/services" className="nav-link" onClick={() => handleClick('/services')}>
+              {/* <NavLink style={{ textDecoration: "none", color: "white" }} to="/services" className="nav-link" onClick={() => handleClick('/services')}>
                 Services
-              </NavLink>
+              </NavLink> */}
+              <a style={{ textDecoration: "none", color: "white" }} href="/services" className="nav-link">Services</a>
               </li>
               <li className="nav-item">
-              <NavLink style={{ textDecoration: "none", color: "white" }} to="/team" className="nav-link"
-              onClick={() => handleClick('/team')}
+              <a style={{ textDecoration: "none", color: "white" }} href="/team" className="nav-link"
+              // onClick={() => handleClick('/team')}
               >
                 Team Members
-              </NavLink>
+              </a>
             </li>
           </ul>
         </div>
