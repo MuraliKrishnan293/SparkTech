@@ -152,11 +152,11 @@ const Home = () => {
         transition={{duration:1}}
         className="text-center pt-5 py-5 text-info abt">About Us<hr /></motion.h1>
         <motion.p
-        variants={variant5}
+        
         initial="initial"
         whileInView="animate"
-        transition={{duration:1}}
-        className="p-md-5 text-primary fs-md-5 m-md-5">
+        transition={{duration:0.3}}
+        className="p-md-2 text-secondary fs-md-5 m-md-2">
           At SparkTech, a dynamic startup in the IT solutions space, we are
           passionate about driving digital transformation with innovative
           technology. Our agile team has been
