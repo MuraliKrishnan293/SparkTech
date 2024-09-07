@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "name": "MALATHI B",
+    "name": "Malathi B",
     "role": "FOUNDER & CEO",
     "image": "i1",
     "link":"https://www.linkedin.com/in/malathi-balaraman-306236243/"
@@ -15,7 +15,7 @@
     },
     {
       "id": "3",
-      "name": "MALTHI M",
+      "name": "Malathi M",
       "role": "Team Lead",
       "image": "i3",
       "link":"https://www.linkedin.com/in/malathim/"
@@ -29,28 +29,28 @@
     },
     {
       "id": "5",
-      "name": "MURALI KRISHNAN",
+      "name": "Murali Krishnan",
       "role": "Backend Developer",
       "image": "i5",
       "link":"https://www.linkedin.com/in/murali-krishnan-6a4168279/"
     },
     {
       "id": "6",
-      "name": "NAVEEN C",
+      "name": "Naveen C",
       "role": "Frontend Developer",
       "image": "i10",
       "link":"https://linkedin.com"
     },
     {
       "id": "7",
-      "name": "SARANYA C R",
+      "name": "Saranya C R",
       "role": "Backend Developer",
       "image": "i7",
       "link":"https://www.linkedin.com/in/saranya-c-r-107b7b27a/"
     },
     {
       "id": "8",
-      "name": "SAHANA GANESH",
+      "name": "Sahana Ganesh",
       "role": "Frontend Developer",
       "image": "i8",
       "link":"https://www.linkedin.com/in/sahana-senthil-757138262/"
@@ -64,7 +64,7 @@
     },
     {
       "id": "10",
-      "name": "SARMISHA MURUGESAN",
+      "name": "Sarmisha Murugesan",
       "role": "Backend Developer",
       "image": "i6",
       "link":"https://www.linkedin.com/in/sarmisha-murugesan-449014255/"
