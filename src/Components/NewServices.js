@@ -13,7 +13,7 @@ export default function Desktop1() {
   };
 
   return (
-    <div className="container d-flex flex-column justify-content-center align-items-center text-center py-5">
+    <div className="container d-flex flex-column justify-content-center align-items-center text-white text-center py-5">
       <div className="row mb-5">
         <div className="col-md-8 mt-5 text-center mx-auto">
           <h1 className="mb-4">Our Services</h1>
@@ -46,9 +46,9 @@ export default function Desktop1() {
         initial="initial"
         whileInView="animate"
         transition={{duration:1}}
-        className="col-md-6 order-md-1">
+        className="col-md-6 text-white order-md-1">
           <h2 className="mb-3">Software Development</h2>
-          <p className="text-muted">
+          <p className="text-white">
             At the heart of our services lies our expertise in crafting bespoke
             software solutions that are as unique as your business. Whether
             you're looking for a custom application, a dynamic website, or a
@@ -78,9 +78,9 @@ export default function Desktop1() {
             />
           </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 text-white">
           <h2 className="mb-3">UI/UX Design</h2>
-          <p className="text-muted">
+          <p className="">
             Creating an exceptional user experience is at the core of our design
             philosophy. Our UI/UX design team specializes in developing
             intuitive interfaces and visually compelling designs that captivate
@@ -109,9 +109,9 @@ export default function Desktop1() {
             />
           </div>
         </div>
-        <div className="col-md-6 order-md-1">
+        <div className="col-md-6 text-white order-md-1">
           <h2 className="mb-3">Tech Training</h2>
-          <p className="text-muted">
+          <p className="">
             In today’s rapidly evolving tech environment, staying ahead of the
             curve is essential. Our tech training programs are designed to equip
             you with the knowledge and skills needed to thrive in this dynamic
@@ -141,9 +141,9 @@ export default function Desktop1() {
             />
           </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 text-white">
           <h2 className="mb-3">Tech Writing</h2>
-          <p className="text-muted">
+          <p className="">
             Effective communication of complex technology is crucial for both
             experts and novices alike. Our tech writing services are designed to
             transform intricate concepts into clear, concise, and actionable
