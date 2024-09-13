@@ -43,12 +43,12 @@ const Members = () => {
 
   return (
     <div style={{minHeight:"98vh"}} className='members p-5 container'>
-        <motion.h1
+        <h1
         variants={varianth}
         initial="initial"
         whileInView="animate"
         transition={{ duration:1}}
-        className='text-info text-center mt-md-5 pt-md-5 text-white my-5 py-5'>Team Crews</motion.h1>
+        className='text-info text-center mt-md-5 pt-md-5 text-white my-5 py-5'>Team Crews</h1>
         <motion.div
         variants={variantsall}
         initial="initial"
@@ -57,16 +57,18 @@ const Members = () => {
         className='row d-flex justify-content-center align-items-center text-center row-cols-1 row-cols-sm-2 row-cols-md-3 g-4'>
           {items.map((item, index) => (
           <motion.div
-          // variants={variantsall}
-          //   initial="initial"
-          //   whileInView="animate"
-          //   transition={{ duration:2}}
+          variants={variantsall}
+            initial="initial"
+            whileInView="animate"
+            transition={{ duration:2}}
+            viewport={{once: true}}
           key={index} className='member col'>
             <motion.div
             // variants={variantsall}
             // initial="initial"
             // whileInView="animate"
-            transition={{ duration:2}}
+            // viewport={{once: true}}
+            transition={{ duration: 0.8, staggerChildren: 0.3, type:"spring", stiffness: 100}}
             style={{height:"398px"}}
             className='card te'><img
                 src={imageMap[item.image]}
