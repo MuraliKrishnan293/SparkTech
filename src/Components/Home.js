@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../App.css";
 import { motion } from "framer-motion";
 import pc from "../Images/9s8SxaPfsoUTjCgcXOPxC-transformed.png";
@@ -9,6 +9,15 @@ import Courses from "./Courses";
 import Members from "./Members";
 
 const Home = () => {
+
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  useEffect(() => {
+    // Timeout to simulate image loading
+    const timer = setTimeout(() => setImagesLoaded(true), 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
   const variantsall = {
     initial: { scale: -70, opacity: 0 },
     animate: { scale: 1, opacity: 1 },
@@ -52,7 +61,10 @@ const Home = () => {
   };
 
   return (
-    <div style={{overflow:"hidden"}} className="d-flex flex-column justify-content-center align-items-center text-center">
+    <div style={{overflow:"hidden", minHeight: "100vh"}} className="d-flex flex-column justify-content-center align-items-center text-center">
+      {!imagesLoaded ? (
+      <div className="loader1">Loading...</div>
+    ) : (<>
       <div id="70f8bb9a8a5393ef080507a89e4b98d139000d65" className="home container-fluid rounded-5">
         <motion.div className="container-fluid">
           <div className="row">
@@ -174,7 +186,7 @@ const Home = () => {
       </div>
       <div className="d-flex justify-content-center align-items-center text-center"><Team /></div>
       {/* <div><Courses /></div> */}
-      
+      </>)}
     </div>
   );
 };
