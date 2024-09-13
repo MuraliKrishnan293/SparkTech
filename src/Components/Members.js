@@ -73,6 +73,7 @@ const Members = () => {
             className='card te'><img
                 src={imageMap[item.image]}
                 alt={item.name}
+                loading="lazy"
                 className="card-image card-img"
               />
             <h2>{item.name}</h2>
