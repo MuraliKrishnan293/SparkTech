@@ -11,6 +11,13 @@ import Members from "./Members";
 const Home = () => {
 
   const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [bgImageLoaded, setBgImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const bgImage = new Image();
+    bgImage.src = "./Images/pexels-joshsorenson-1714208-1.webp";
+    bgImage.onload = () => setBgImageLoaded(true);
+  }, [])
 
   useEffect(() => {
     // Timeout to simulate image loading
@@ -61,7 +68,15 @@ const Home = () => {
   };
 
   return (
-    <div style={{overflow:"hidden", minHeight: "100vh", objectFit: "cover"}} className="d-flex flex-column justify-content-center align-items-center text-center">
+    <div 
+    // style={{overflow:"hidden", minHeight: "100vh", objectFit: "cover"}} 
+    style={{
+      overflow: "hidden",
+      minHeight: "100vh",
+      objectFit: "cover",
+      backgroundImage: bgImageLoaded ? 'url("./Images/pexels-joshsorenson-1714208-1.webp")' : "none",
+    }}
+    className="d-flex flex-column justify-content-center align-items-center text-center">
      (<>
       <div id="70f8bb9a8a5393ef080507a89e4b98d139000d65" className="home container-fluid rounded-5">
         <motion.div className="container-fluid">
