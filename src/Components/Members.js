@@ -110,8 +110,11 @@ import i9 from "./MemberImages/harsini.png";
 import i10 from "./MemberImages/naveen c.png";
 import items from "./Teams.json";
 import { motion } from "framer-motion";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Members = () => {
+  AOS.init();
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
@@ -159,21 +162,24 @@ const Members = () => {
             className='text-info text-center mt-md-5 pt-md-5 text-white my-5 py-5'>
             Team Crews
           </motion.h1>
-          <motion.div
+          <div
             variants={variantsall}
             initial="initial"
             whileInView="animate"
             transition={{ duration: 2 }}
             className='row d-flex justify-content-center align-items-center text-center row-cols-1 row-cols-sm-2 row-cols-md-3 g-4'>
             {items.map((item, index) => (
-              <motion.div
+              <div
                 key={index}
                 className='member col'>
-                <motion.div
+                <div
                   transition={{ duration: 0.8, staggerChildren: 0.3, type: "spring", stiffness: 100 }}
                   style={{ height: "398px" }}
-                  className='card te'>
+                  className='card te' data-aos="fade-up" data-aos-duration="1000"
+                  data-aos-easing="ease-in-out" data-aos-once="true" data-aos-delay={index*30}>
+
                   <img
+                  style={{objectFit: "cover"}}
                     src={imageMap[item.image]}
                     alt={item.name}
                     loading="lazy"
@@ -188,10 +194,10 @@ const Members = () => {
                       <i className="fa-brands fa-linkedin fs-1" style={{ color: "blue" }}></i>
                     </a>
                   </p>
-                </motion.div>
-              </motion.div>
+                </div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </>
       )}
     </div>

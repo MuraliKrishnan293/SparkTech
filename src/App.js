@@ -8,8 +8,13 @@ import Team from "./Components/Team";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Desktop1 from "./Components/NewServices";
 import { useEffect, useState } from "react";
+import LocomotiveScroll from 'locomotive-scroll';
+import Intro from "./Components/Intro";
 
 function App() {
+
+  const locomotiveScroll = new LocomotiveScroll();
+
   const [showTeam, setShowTeam] = useState(false);
 
   useEffect(() => {
@@ -23,10 +28,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Nav />
-
+        {/* <Intro /> */}
         {/* <Home /> */}
         <Routes>
           {/* <Home /> */}
+
           <Route exact path="/" element={<Home />} />
           <Route path="/services" element={<Desktop1 />} />
           <Route path="/team" element={<Members />} />

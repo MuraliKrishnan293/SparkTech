@@ -61,10 +61,8 @@ const Home = () => {
   };
 
   return (
-    <div style={{overflow:"hidden", minHeight: "100vh"}} className="d-flex flex-column justify-content-center align-items-center text-center">
-      {!imagesLoaded ? (
-      <div className="loader1">Loading...</div>
-    ) : (<>
+    <div style={{overflow:"hidden", minHeight: "100vh", objectFit: "cover"}} className="d-flex flex-column justify-content-center align-items-center text-center">
+     (<>
       <div id="70f8bb9a8a5393ef080507a89e4b98d139000d65" className="home container-fluid rounded-5">
         <motion.div className="container-fluid">
           <div className="row">
@@ -186,7 +184,7 @@ const Home = () => {
       </div>
       <div className="d-flex justify-content-center align-items-center text-center"><Team /></div>
       {/* <div><Courses /></div> */}
-      </>)}
+      </>)
     </div>
   );
 };
